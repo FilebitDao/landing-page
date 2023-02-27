@@ -1,0 +1,20 @@
+.footer {
+  @apply max-w-[1440px] px-[46px] mx-auto mt-[40px] pb-[40px] flex justify-between items-center;
+
+  .logo {
+    @apply flex items-center text-sm text-grey font-light gap-[32px];
+
+    .copyRight {
+      @apply font-semibold;
+      @apply mdmax:hidden;
+    }
+  }
+
+  .media {
+    @apply flex items-center text-sm font-semibold text-grey gap-[32px];
+
+    .mediaIcons {
+      @apply flex gap-[24px];
+    }
+  }
+}

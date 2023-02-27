@@ -1,0 +1,33 @@
+.grandit {
+  @apply w-full relative h-[580px];
+  @apply mdmax:h-[430px];
+
+  @media screen and (max-height: 768px) {
+    @apply h-[100vh];
+  }
+
+  .canvas {
+    @apply w-full h-full;
+    --gradient-color-1: #D64A90; 
+    --gradient-color-2: #BA96D3;
+    --gradient-color-3: #84C2E6;
+  }
+
+  .mask {
+    @apply absolute left-0 top-0 bottom-0 right-0 bg-mask flex items-center justify-center px-[96px];
+    @apply mdmax:px-0;
+
+    .about {
+      .title {
+        @apply text-xxxxl text-white font-bold text-center leading-snug mx-auto max-w-[770px];
+        @apply mdmax:text-xxl;
+        @apply smmax:text-lg;
+      }
+  
+      .desc {
+        @apply text-xl font-normal mx-auto text-center leading-[1.04] max-w-[760px] text-grey mt-[30px] mb-[70px];
+        @apply smmax:text-sm;
+      }
+    }
+  }
+}

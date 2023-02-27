@@ -1,0 +1,29 @@
+.partners {
+  @apply mt-[120px] bg-newslatter rounded-xl px-[40px] py-[46px] mb-[50px];
+  @apply lgmax:px-[20px] lgmax:py-[30px] lgmax:pb-[20px];
+
+  .title {
+    @apply text-xxxl text-white font-semibold text-center leading-[1.2];
+    @apply lgmax:text-xxl;
+    @apply mdmax:text-xl;
+  }
+
+  .partnerContainer {
+    @apply flex justify-between items-center mt-[90px];
+    @apply mdmax:flex-wrap mdmax:mt-[20px];
+
+    .partner {
+      @apply mdmax:w-[50%] mdmax:mt-[30px];
+
+      .partnerLogo {        
+        @apply h-[66px] mb-[58px] flex justify-center items-center;
+        @apply mdmax:h-[47px] mdmax:mb-[20px];
+      }
+
+      .partnerName {
+        @apply text-lg text-white font-semibold text-center leading-[1.2];
+        @apply mdmax:text-sm;
+      }
+    }
+  }
+}

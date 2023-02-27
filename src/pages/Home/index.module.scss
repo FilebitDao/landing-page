@@ -1,0 +1,170 @@
+.home {
+  @apply pt-[70px] px-[180px];
+  @apply xlmax:px-[40px];
+  @apply lgmax:px-[40px];
+  @apply mdmax:px-[40px];
+  @apply lgmin:w-[968px] lgmin:px-0 lgmin:mx-auto;
+  @apply xxlmin:w-[1120px];
+
+  .title {
+    @apply text-xxxl text-white font-semibold leading-normal text-center;
+    @apply lgmax:text-xxl;
+  }
+
+  .container {
+    @apply relative z-20;
+  }
+
+  .partTitle {
+    @apply text-xl text-white font-semibold leading-[1.2];
+  }
+
+  .partDesc {
+    @apply text-lg text-white leading-normal font-medium pt-[20px] pb-[36px];
+  }
+
+  .svgIcon {
+    @apply relative z-20 block;
+    @apply lgmax:mx-auto max-w-[90%];
+  }
+
+  .gradientLinkWrapper {
+    @apply lgmax:text-center;
+
+    .gradientLink {
+      @apply inline-flex items-center gap-[10px];
+  
+      .link {
+        @apply text-transparent bg-clip-text bg-primary font-semibold;
+      }
+    }
+  }
+
+  .stableCoinBorrow {
+    @apply flex justify-between pt-[70px];
+    @apply lgmax:block;
+
+    .stableCoin {
+      @apply relative;
+      @apply lgmax:mx-auto;
+
+      &::before {
+        @apply content-[''] block bg-no-repeat absolute z-10 bg-contain top-[50px] w-[303px] h-[274px] bg-mint;
+        @apply lgmax:left-[50%] lgmax:ml-[-152px];
+        filter: blur(62px);
+      }
+
+      .container {
+        @apply w-[392px];
+        @apply lgmax:w-auto;
+
+        .partTitle {
+          @apply pr-[40px];
+          @apply lgmax:pr-0;
+        }
+      }
+    }
+
+    .borrow {
+      @apply relative;
+      @apply lgmax:mt-[80px];
+
+      &::before {
+        @apply content-[''] block bg-no-repeat absolute z-10 bg-contain w-[444px] h-[347px] bg-borrow;
+        @apply lgmax:left-[50%] lgmax:ml-[-222px] lgmax:top-[40px];
+        filter: blur(62px);
+      }
+
+      .container {
+        @apply w-[455px] pt-[20px];
+        @apply lgmax:w-auto;
+
+        .partTitle {
+          @apply pr-[80px] pt-[23px];
+          @apply lgmax:pr-0;
+        }
+      }
+    }
+  }  
+
+  .investments {
+    @apply pt-[170px] flex justify-between items-center relative;
+    @apply lgmax:block;
+    @apply mdmax:pt-0;
+
+    &::before {
+      @apply content-[''] block bg-no-repeat absolute z-10 bg-contain bg-leverage w-[435px] h-[264px] left-[60px] top-[320px];
+      @apply lgmax:left-[50%] lgmax:ml-[-220px];
+      filter: blur(62px);
+      transform: rotate(-3.71deg);
+    }
+
+    .content {
+      @apply w-[392px] z-20;
+      @apply lgmax:w-auto;
+
+      .partTitle {
+        @apply text-xxxl;
+      }
+    }
+  }
+
+  .stake {
+    @apply flex justify-between items-center relative pt-[140px];
+    @apply lgmax:block;
+    @apply mdmax:pt-0;
+
+    &::after {
+      @apply content-[''] block bg-no-repeat absolute z-10 bg-contain bg-stake w-[435px] h-[264px] right-[60px] top-[280px] opacity-70;
+      @apply lgmax:left-[50%] lgmax:ml-[-218px];
+      filter: blur(62px);
+      transform: rotate(10deg);
+    }
+
+    .stakeBefore {
+      @apply hidden;
+      @apply lgmax:block;
+    }
+
+    .stakeAfter {
+      @apply block;
+      @apply lgmax:hidden;
+    }
+
+    .content {
+      @apply w-[392px] z-20;
+      @apply lgmax:w-auto;
+
+      .partTitle {
+        @apply text-xxxl;
+      }
+    }
+  }
+
+  .stakeToMining {
+    @apply flex justify-between items-center relative pt-[120px];
+    @apply lgmax:block;
+    @apply mdmax:pt-0;
+
+    &::before {
+      @apply content-[''] block bg-no-repeat absolute z-10 bg-contain w-[532px] h-[449px] bg-stakeasset left-[-80px] top-[80px] opacity-40;
+      @apply lgmax:left-[50%] lgmax:ml-[-266px];
+      filter: blur(62px);
+      transform: rotate(-38deg);
+    }
+
+    .content {
+      @apply w-[470px] z-20;
+      @apply lgmax:w-auto lgmax:mt-[100px];
+
+      .partTitle {
+        @apply text-xxxl;
+      }
+
+      .partDesc {
+        @apply w-[392px];
+        @apply lgmax:w-auto;
+      }
+    }
+  }
+}

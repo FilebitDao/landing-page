@@ -1,0 +1,29 @@
+.newsLetter {
+  @apply bg-newslatter rounded-xl flex justify-between items-center px-[40px] py-[46px] mb-[60px];
+  @apply mdmax:block;
+
+  .descs {
+    .title {
+      @apply text-xl2 text-white font-semibold;
+      @apply lgmax:text-xl;
+    }
+  
+    .follow {
+      @apply text-lg text-grey font-normal pt-[10px];
+      @apply lgmax:text-sm;
+    }
+  }
+
+  .form {
+    @apply relative w-[535px] h-[40px] rounded-lg border border-gray border-solid overflow-hidden;
+    @apply mdmax:w-full mdmax:mt-[20px];
+
+    .input {
+      @apply block bg-transparent outline-none border-none w-full h-full indent-2 text-white text-sm font-semibold;
+    }
+
+    .submit {
+      @apply py-[12px] px-[55px] text-sm text-white font-semibold leading-none absolute right-0 top-0 bottom-0 appearance-none border-none outline-none bg-primary cursor-pointer;
+    }
+  }
+}

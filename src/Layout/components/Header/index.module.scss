@@ -1,0 +1,72 @@
+.header {
+  @apply flex justify-between items-center absolute transition-all left-0 top-0 right-0 z-10 px-[46px] py-[8px];
+  @apply mdmax:px-[20px];
+
+  .links {
+    @apply flex gap-[50px];
+    @apply mdmax:hidden;
+
+    .link {
+      @apply text-lg text-white transition-all font-semibold;
+    }
+  }
+
+  .menus {
+    @apply mdmax:flex mdmax:items-center mdmax:gap-[20px];
+
+    .lunchApp {
+      @apply text-sm font-semibold text-[#323232] rounded-sm bg-white transition-all py-[9px] px-[12px];
+    }
+
+    .menuTrigger {
+      @apply hidden;
+      @apply mdmax:block cursor-pointer;
+    }
+  }
+
+  &.fixedHeader {
+    @apply bg-white fixed z-50;
+
+    svg {
+      path {
+        @apply fill-[#323232];
+      }
+    }
+
+    .links {
+      .link {
+        @apply text-[#323232];
+      }
+    }
+
+    .menus {
+      .lunchApp {
+        @apply bg-[#323232] text-white;
+      }
+    }
+  }
+}
+
+.menuWrapper {
+  @apply rounded-t-xl shadow-none bg-menu #{!important};
+
+  .close {
+    @apply absolute cursor-pointer right-[30px] top-[30px];
+  }
+
+  .links {
+    @apply pt-[50px] px-[24px];
+
+    .link {
+      @apply block text-md text-white leading-[3em];
+    }
+  }
+}
+
+.headerPlaceholder {
+  @apply w-full hidden h-[56px];
+
+  .fixed {
+    @apply block;
+  }
+}
